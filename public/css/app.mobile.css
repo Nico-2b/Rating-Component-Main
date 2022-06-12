@@ -1,0 +1,19 @@
+body {
+    padding: 1rem;
+}
+
+main {
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    width: 100%;
+    
+
+}
+.note {
+    width: 2.8rem;
+    height: 2.8rem;
+    
+}

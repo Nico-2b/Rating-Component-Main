@@ -1,0 +1,154 @@
+.attribution { font-size: 11px; text-align: center; color: white; bottom: 1.5rem; position: relative;}
+.attribution a { color: hsl(0, 28%, 83%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    font-family: var(--Font);
+}
+:root {
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Font: "Overpass";
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: 2.5rem;
+    width: 28%;
+
+}
+
+.content, .contentRate {
+    display: flex;
+    flex-direction: column;
+    
+}
+.contentRate {
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+    color: white;
+
+}
+.text, .rateText p {
+    color: var(--Light-Grey);
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+.rateText {
+    text-align: center;
+}
+.selector {
+margin-bottom: 2.4rem;
+color: var(--Orange);
+background-color: var(--Very-Dark-Blue);
+padding: 0.4rem 1.2rem;
+border-radius: 20px;
+
+text-align: center;
+
+}
+.svg {
+    margin-bottom: 1rem;
+
+}
+.star-container {
+    height: 3rem;
+    width: 3.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--Very-Dark-Blue);
+    border-radius: 50%;
+    margin-bottom: 2.5rem;
+    
+}
+.note-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    
+}
+
+.note {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--Very-Dark-Blue);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+@media (min-width: 1200px) {
+
+    .note:hover {
+        color: white;
+        background-color: var(--Orange);
+        
+    
+        
+    }
+}
+.error {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.note:active {
+    transform: scale(1.05);
+    
+
+    
+}
+
+.btn-submit {
+    background-color: var(--Orange);
+    border-radius: 2rem;
+    width: 100%;
+    padding: 0.8rem 0;
+    margin: auto;
+    color: white;
+    letter-spacing: 2px;
+    border: 1px solid black;
+    transition: all 0.15s;
+
+    cursor: pointer;
+}
+.btn-submit:hover {
+    color: var(--Orange);
+    background-color: white;
+}
+.btn-submit:active {
+    transform: scale(0.975);
+}
+.active {
+    color: white;
+    background-color: var(--Medium-Grey);
+}
