@@ -1,20 +1,16 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-const notes = document.querySelectorAll(".note")
+const notes = [...document.querySelectorAll(".note")]
 const btn = document.querySelector("button");
 const container = document.querySelector(".content")
+
 notes.forEach((elem) => {
     elem.addEventListener("click", (e) => {
         const note = e.target;
-        if(note.classList.contains("active")) {
-            note.setAttribute("class", "note")
-        } else {
-
-            notes.forEach((n) => {
-                n.setAttribute("class", "note")
-            })
-            note.setAttribute("class", "note active")
-        }
+        if (note.classList.contains("active")) return;
+        const i = notes.findIndex((n) => n.classList.contains("active"));
+        if(i !== -1) notes[i].classList.remove("active");
+        note.classList.add("active");
        
     })
 })
